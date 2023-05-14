@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System;
 
-namespace Module_35_SocialNetwork
+namespace Module_35_SocialNetwork_Razor.Models.Users
 {
-    public class User: IdentityUser
+    public class User : IdentityUser
     {
         public string FirstName { get; set; }
 

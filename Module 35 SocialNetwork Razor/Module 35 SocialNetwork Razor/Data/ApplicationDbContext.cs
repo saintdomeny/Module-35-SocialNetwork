@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Module_35_SocialNetwork;
+using Module_35_SocialNetwork_Razor.Models.Users;
 
-namespace Module_35_SocialNetwork_Razor
+namespace Module_35_SocialNetwork_Razor.Data
 {
     public class ApplicationDbContext : IdentityDbContext<User>
     {

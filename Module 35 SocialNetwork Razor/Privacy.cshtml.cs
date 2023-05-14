@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Module_35_SocialNetwork_Razor.Pages
+namespace Module_35_SocialNetwork_Razor.Views.Home
 {
     public class PrivacyModel : PageModel
     {
