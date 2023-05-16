@@ -8,8 +8,15 @@
 
         @foreach (var user in @Model.UserList)
         {
-            <div>
+            <div class="center-align">
+                <div class="mrgn">
+                    <img src="@user.Image" class="ava" />
+                </div>
                 <label>@user.GetFullName()</label>
+                <br>
+                <label>@user.About</label>
+                <br>
+                <label>@user.Status</label>
                 @if (!@user.IsFriendWithCurrent)
                 {
                     <form asp-controller="AccountManager" asp-action="AddFriend" asp-route-id="@user.Id" method="post">

@@ -22,12 +22,16 @@
             <div class="topnav">
                 @if (!SignInManager.IsSignedIn(User))
                 {
-                    <a asp-area="" asp-controller="Home" asp-action="Index">SocialNetwork</a>
+                    <a asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="https://lms.skillfactory.ru/assets/courseware/v1/56f64ca2b9d4a99d313e45ea9e4dfc1f/asset-v1:SkillFactory+CDEV+2021+type@asset+block/cdev_43.5_9.png" class="ava" />
+                    </a>
                 }
                 else
 
                 {
-                    <a asp-area="" asp-controller="AccountManager" asp-action="MyPage">SocialNetwork</a>
+                    <a asp-area="" asp-controller="AccountManager" asp-action="MyPage">
+                        <img src="https://lms.skillfactory.ru/assets/courseware/v1/56f64ca2b9d4a99d313e45ea9e4dfc1f/asset-v1:SkillFactory+CDEV+2021+type@asset+block/cdev_43.5_9.png" class="ava" />
+                    </a>
                 }
                 <partial name="_LoginPartial.cshtml" />
                 <partial name="_SearchLayoutPartial" />
