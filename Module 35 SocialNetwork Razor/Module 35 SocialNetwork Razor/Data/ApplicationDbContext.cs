@@ -10,7 +10,8 @@ namespace Module_35_SocialNetwork_Razor.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
-            Database.Migrate();
+            Database.EnsureDeleted();   // удаляем бд со старой схемой
+            Database.EnsureCreated();
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
