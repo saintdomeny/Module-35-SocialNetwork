@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Module_35_SocialNetwork_Razor.Data;
 using Module_35_SocialNetwork_Razor.Data.Repository;
 using Module_35_SocialNetwork_Razor.Data.UoW;
 using Module_35_SocialNetwork_Razor.Extentions;
